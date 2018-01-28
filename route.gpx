@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<gpx version='1.1' creator='Navit http://navit.sourceforge.net'
+     xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+     xmlns:navit='http://www.navit-project.org/schema/navit'
+     xmlns='http://www.topografix.com/GPX/1/1'
+     xsi:schemaLocation='http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd'>
+<rte>
+<rtept lon='174.7794758849370851' lat='-36.6117126938090252'><type>nav_roundabout_l4</type><name>Enter the roundabout in 400 metres</name></rtept>
+<rtept lon='174.7638366822101261' lat='-36.6311721623450595'><type>nav_roundabout_l3</type><name>Enter the roundabout in 2.8 kilometres</name></rtept>
+<rtept lon='174.6637961467677371' lat='-36.6251240851300395'><type>nav_roundabout_l4</type><name>Enter the roundabout in 12 kilometres</name></rtept>
+<rtept lon='174.6629148115939358' lat='-36.6278955779947495'><type>nav_merge_right</type><name>Merge in 350 metres onto the SH 1 Auckland Northern Motorway </name></rtept>
+<rtept lon='174.7500410887753333' lat='-36.8205003898726844'><type>nav_keep_right</type><name>Keep right in 24 kilometres into Auckland Northern Motorway SH 1 </name></rtept>
+<rtept lon='175.1866437420167699' lat='-37.6118547492117727'><type>nav_roundabout_l3</type><name>Enter the roundabout in 100 kilometres</name></rtept>
+<rtept lon='175.1917159158741413' lat='-37.6109856043633286'><type>nav_roundabout_l5</type><name>Enter the roundabout in 500 metres</name></rtept>
+<rtept lon='175.2010418809275336' lat='-37.6192705638512379'><type>nav_keep_left</type><name>Keep left in 1.3 kilometres onto the SH 1 </name></rtept>
+<rtept lon='175.2401174047047050' lat='-37.7690878889991595'><type>nav_roundabout_l4</type><name>Enter the roundabout in 18 kilometres</name></rtept>
+<rtept lon='175.2531755544226257' lat='-37.7827430314201393'><type>nav_roundabout_l3</type><name>Enter the roundabout in 1.9 kilometres</name></rtept>
+<rtept lon='175.2860907251992728' lat='-37.8074168269295043'><type>nav_left_2</type><name>Turn left in 5 kilometres into Normandy Avenue SH 1 </name></rtept>
+<rtept lon='175.3053721804301688' lat='-37.8019313152640208'><type>nav_roundabout_l4</type><name>Enter the roundabout in 2.2 kilometres</name></rtept>
+<rtept lon='175.3192037467291868' lat='-37.8007446289573679'><type>nav_roundabout_l5</type><name>Enter the roundabout in 1.3 kilometres</name></rtept>
+<rtept lon='175.3228100263689271' lat='-37.8010430788050655'><type>nav_roundabout_l5</type><name>Enter the roundabout in 350 metres</name></rtept>
+<rtept lon='175.7675695265760396' lat='-37.9853393600205536'><type>nav_roundabout_l5</type><name>Enter the roundabout in 50 kilometres</name></rtept>
+<rtept lon='175.7805107644852285' lat='-38.0505285988422699'><type>nav_roundabout_l4</type><name>Enter the roundabout in 8 kilometres</name></rtept>
+<rtept lon='175.8951023235113951' lat='-38.2600915863201507'><type>nav_keep_right</type><name>Keep right in 27 kilometres into State Highway 1 SH 1 </name></rtept>
+<rtept lon='176.0998778531790663' lat='-38.6235596481258980'><type>nav_roundabout_l5</type><name>Enter the roundabout in 52 kilometres</name></rtept>
+<rtept lon='176.1048960677400999' lat='-38.6689337259299108'><type>nav_keep_right</type><name>Keep right in 5 kilometres into East Taupō Arterial SH 1;SH 5 towards Palmerston North</name></rtept>
+<rtept lon='176.1121445998838055' lat='-38.7046508500122570'><type>nav_roundabout_l4</type><name>Enter the roundabout in 4.6 kilometres</name></rtept>
+<rtept lon='176.0730061235942117' lat='-38.7391646618763019'><type>nav_roundabout_l4</type><name>Enter the roundabout in 5 kilometres</name></rtept>
+<rtept lon='175.3848002646649036' lat='-40.1745182583780789'><type>nav_left_2</type><name>Turn left in 210 kilometres into Bridge Street SH 1;SH 3 towards Wellington</name></rtept>
+<rtept lon='175.4242175306523279' lat='-40.2200820320383841'><type>nav_right_2</type><name>Turn right in 6 kilometres into State Highway 1 SH 1 </name></rtept>
+<rtept lon='175.1575057219850180' lat='-40.7605262479483699'><type>nav_roundabout_l4</type><name>Enter the roundabout in 70 kilometres</name></rtept>
+<rtept lon='174.8694260319610692' lat='-41.0829020322979375'><type>nav_roundabout_l4</type><name>Enter the roundabout in 46 kilometres</name></rtept>
+<rtept lon='174.8683198663857752' lat='-41.1058101195541425'><type>nav_straight</type><name>Continue straight in 2.7 kilometres into Paremata Roundabout SH 1 </name></rtept>
+<rtept lon='174.8680860427682546' lat='-41.1060472916860888'><type>nav_roundabout_l4</type><name>Enter the roundabout in 40 metres</name></rtept>
+<rtept lon='174.8115007273238461' lat='-41.2421982333733581'><type>nav_keep_right</type><name>Keep right in 17 kilometres at interchange Ngauranga onto the SH 1 towards Wellington City</name></rtept>
+<rtept lon='174.8083531017031191' lat='-41.2509480186900035'><type>nav_merge_right</type><name>Merge in 1.4 kilometres onto the SH 1 Wellington Urban Motorway </name></rtept>
+<rtept lon='174.7734324437452926' lat='-41.2783257864153654'><type>nav_exit_left</type><name>Take exit The Terrace on your left in 4.3 kilometres towards Kelburn</name></rtept>
+<rtept lon='174.7741968671103052' lat='-41.2843811443547963'><type>nav_right_2</type><name>Turn right in 700 metres into The Terrace </name></rtept>
+<rtept lon='174.7719935291758588' lat='-41.2887939028268249'><type>nav_right_2</type><name>Turn right in 500 metres into Salamanca Road </name></rtept>
+<rtept lon='174.7673620229053597' lat='-41.2894696434707100'><type>nav_roundabout_l7</type><name>Enter the roundabout in 700 metres</name></rtept>
+<rtept lon='174.7666425656206286' lat='-41.2872734607887821'><type>nav_left_3</type><name>Turn strongly left in 250 metres into Central Terrace </name></rtept>
+<rtept lon='174.7649878138657016' lat='-41.2907197452112626'><type>nav_destination</type><name>You have reached your destination in 450 metres </name></rtept>
+</rte>
+</gpx>

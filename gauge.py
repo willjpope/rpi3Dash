@@ -1,7 +1,8 @@
 import math
 import pygame
+import pygame.gfxdraw
 
-def gaugeLegend(
+def gaugeNeedleLegend(
                     legendValue,
                     displayValue,
                     positionX,
@@ -28,6 +29,44 @@ def gaugeLegend(
         ya = position[1] - math.sin(math.radians(legendValue)) * (length - int(length / lineLength))
         xlabel = position[0] - math.cos(math.radians(legendValue)) * (length - int(length / singleLine))
         ylabel = position[1] - math.sin(math.radians(legendValue)) * (length - int(length / singleLine))
+        
+        pygame.draw.line(destination, gaugeDivCol, (x,y),(xa,ya), 10)
+                
+
+        label = fontSize.render(str(int(displayValue / displayDivision)), 1, gaugeDivFontCol)
+
+        labelRect = label.get_rect()
+        labelRect.centerx = int(xlabel)
+        labelRect.centery = int(ylabel)
+        destination.blit(label, (labelRect))
+        
+def gaugeBarLegend(
+                    legendValue,
+                    displayValue,
+                    positionX,
+                    positionY,
+                    length,
+                    destination,
+                    fontSize,
+                    doubleLength,
+                    drawLine,
+                    doubleLine,
+                    singleLine,
+                    displayDivision,
+                    backgroundColour,
+                    gaugeDivCol,
+                    gaugeDivFontCol
+    ):
+        position = (positionX,positionY)
+
+        lineLength = doubleLine
+
+        x = position[0]
+        y = position[1]
+        xa = position[0]
+        ya = position[1]
+        xlabel = position[0] - (legendValue) * (length - int(length / singleLine))
+        ylabel = position[1] - (legendValue) * (length - int(length / singleLine))
         
         pygame.draw.line(destination, gaugeDivCol, (x,y),(xa,ya), 10)
                 
@@ -103,13 +142,13 @@ def gaugeNeedle(
 
     valueDivisions = degreesDifference/(gaugeMax/gaugeDivisions)
 
-    gaugeLegend(startPosition, 0, position[0], position[1], length,
+    gaugeNeedleLegend(startPosition, 0, position[0], position[1], length,
                         destination, fontSize,False,True,doubleLine,singleLine,1,backgroundColour, gaugeDivCol, gaugeDivFontCol)
 
     for divisions in range(1,(gaugeMax//gaugeDivisions)):
         
         if needleValue >= (gaugeDivisions * divisions):
-            gaugeLegend((startPosition + (valueDivisions * divisions)), (gaugeDivisions * divisions),
+            gaugeNeedleLegend((startPosition + (valueDivisions * divisions)), (gaugeDivisions * divisions),
                                 position[0], position[1], length, destination, fontSize, True, True, doubleLine,
                                 singleLine, 1, backgroundColour, gaugeDivCol, gaugeDivFontCol)
 
@@ -132,6 +171,54 @@ def gaugeNeedle(
                        (length - int(length / doubleLine)),(180 + startPosition) , (value - 180), gaugeArcCol) #NEEDLE ARC
 
     if needLegend:
-        gaugeLegend((180 + endPosition), needleValue , position[0], position[1],
-                        length, destination, fontSize, False, False,
-                        doubleLine,singleLine,1,backgroundColour, gaugeDivCol, gaugeDivFontCol)
+        gaugeNeedleLegend((180 + endPosition), needleValue , positionX-135, positionY-150,
+                        length, destination, pygame.font.SysFont("Droid Sans", 200), False, False,
+                        doubleLine,singleLine,1,backgroundColour, (0,0,0), gaugeDivFontCol)
+        
+
+def gaugeBar(
+                    barDestination,
+                    barValue,
+                    barLength,
+                    positionX,
+                    positionY,
+                    fontSize,
+                    startPosition,
+                    endPosition,
+                    gaugeMax,
+                    gaugeDivisions,
+                    gaugeNeedleCol,
+                    gaugeArcCol,
+                    gaugeDivCol,
+                    gaugeDivFontCol,
+                    doubleLine,
+                    singleLine,
+                    displayDivision,
+                    bottomLine,
+                    topLine,
+                    needleLine,
+                    displayNeedle,
+                    needLegend,
+                    needDivisionLegend
+    ):
+    
+    if barValue == 0:
+        barValue = 1
+    position = (positionX,positionY)
+    destination = barDestination
+    singleLine = singleLine
+    doubleLine = doubleLine
+    backgroundColour = (0,0,0)
+    
+    x = position[0]
+    y = position[1]
+    
+    xa = position[0]
+    ya = position[1] - ((barValue/barLength)*gaugeMax*4.5)
+    
+    if needLegend:
+        gaugeBarLegend(0, barValue , position[0], position[1],
+                            barLength, destination, fontSize, False, False,
+                            doubleLine,singleLine,1,backgroundColour, gaugeDivCol, gaugeDivFontCol)
+    
+    pygame.draw.line(destination, gaugeDivCol, (x,y),(xa,ya), 1000)
